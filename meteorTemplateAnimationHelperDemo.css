@@ -1,0 +1,16 @@
+/* CSS declarations go here */
+
+
+.animationTemplateBox {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    opacity: 1;
+
+    -webkit-transition: opacity 800ms;
+}
+
+.animationTemplateBox.animate {
+    opacity: 0;
+}

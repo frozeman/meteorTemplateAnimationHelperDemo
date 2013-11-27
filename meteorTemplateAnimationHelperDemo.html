@@ -1,0 +1,42 @@
+<head>
+  <title>template-animation-helper demo</title>
+</head>
+
+<body>
+  {{> main}}
+</body>
+
+<template name="main">
+  <h1>Some steps into animating templates..</h1>
+
+  <button class="fadeIn">Fade in</button> <button class="showList">Show list</button>
+
+  {{#Animate}}
+    {{> animationTemplate}}
+  {{/Animate}}
+
+  {{> AnimateTemplate placeholder="placeItHere"}}
+
+
+  {{> DynamicTemplate "putListHere"}}
+</template>
+
+
+<template name="animationTemplate">
+    <div class="animationTemplateBox animate">
+        This is the animation template
+        {{#if itemId}}
+            Item #{{itemId}} <button>hide</button>
+        {{/if}}
+    </div>
+</template>
+
+
+<template name="listItems">
+    <br>
+    <br>
+    <h2>Some fancy list</h2>
+    {{#each items}}
+        {{> AnimateTemplate template="animationTemplate"}}
+    {{/each}}
+</template>
