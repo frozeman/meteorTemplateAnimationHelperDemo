@@ -8,13 +8,13 @@
     "packages": {
       "template-animation-helper": {
         "git": "https://github.com/frozeman/meteor-template-animation-helper.git",
-        "tag": "v0.3.2",
-        "commit": "73f8f2abb53eadd8450b6ce95efe0e2ca95b7995"
+        "tag": "v1.1.0",
+        "commit": "abc6a5ed080f048f00011fc560724e93ace42674"
       },
       "view-manager": {
         "git": "https://github.com/frozeman/meteor-view-manager.git",
-        "tag": "v0.0.8",
-        "commit": "56d5b5d502d4404d82534ff4fe113af90d06bbe2"
+        "tag": "v0.1.6",
+        "commit": "e689883ce22917c5254c25a661588a549c1d933c"
       }
     }
   }

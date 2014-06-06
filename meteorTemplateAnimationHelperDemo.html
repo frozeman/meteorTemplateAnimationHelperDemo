@@ -9,7 +9,7 @@
 <template name="main">
   <h1>Some steps into animating templates..</h1>
 
-  <button class="fadeIn">Fade in</button> <button class="showList">Show list</button>
+  <button class="fadeIn">Fade in/out</button> <button class="showList">Show list</button>
 
   {{#Animate}}
     {{> animationTemplate}}
@@ -18,7 +18,7 @@
   {{> AnimateTemplate placeholder="placeItHere"}}
 
 
-  {{> DynamicTemplate "putListHere"}}
+  {{> DynamicTemplate placeholder="putListHere"}}
 </template>
 
 
@@ -37,6 +37,6 @@
     <br>
     <h2>Some fancy list</h2>
     {{#each items}}
-        {{> AnimateTemplate template="animationTemplate"}}
+        {{> AnimateTemplate template="animationTemplate" context=this}}
     {{/each}}
 </template>

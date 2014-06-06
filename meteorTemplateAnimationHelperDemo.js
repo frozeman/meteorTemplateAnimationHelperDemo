@@ -33,6 +33,7 @@ if (Meteor.isClient) {
 
   Template.animationTemplate.events({
     'click button' : function () {
+      console.log(this._templateAnimationKey, View.get(this._templateAnimationKey));
       View.set(this._templateAnimationKey, false);
     }
   });
